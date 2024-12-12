@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GameFusion</title>	
+  <link rel="stylesheet" href="style.css">
+    <style>
+      
+        h2 {
+            color: green; /* Этот стиль применяется, если нет инлайнового стиля */
+            font-size: 24px; /* Размер шрифта заголовка */
+        }
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg); /* Начальный угол */
+            }
+            to {
+                transform: rotate(-360deg); /* Конечный угол против часовой стрелки */
+            }
+        }
+    </style>
+</head>
+
+<body>
+	<header>
+    <div class="container">
+      <!-- Инлайновый стиль  -->
+      <h1 style="display: none;">GameFusion</h1>
+		<div class="logo">
+			<img src="#" alt="фото">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#new-product">Новинки</a></li>  <!-- Ссылки в списке -->
+				<li><a href="#recomend">Рекомендуем</a></li>
+				<li><a href="#top">Топ игр</a></li>
+				<li><a href="#">Поддержка</a></li>
+			</ul>
+		</nav>
+		<div class ="text-block"> 
+      <div class = "title">
+			<span class="highlight">GameFusion</span>    <!-- Применяется класс -->
+    </div>
+			<p>Добро пожаловать на Game Fusion – твою главную платформу для поиска лучших игр для одиночного прохождения и кооперативных прохождений. 
+			Здесь ты найдешь рейтинги и обзоры самых популярных игр, которые подойдут как для сольных геймеров, так и для тех, кто любит играть с друзьями.
+			Мы также предоставляем последние новости игровой индустрии, чтобы ты всегда был в курсе всех обновлений, выходов новых игр и трендов в мире игр. 
+			Открой для себя новое игровое измерение с Game Fusion!</p>
+		</div>
+		</div>
+    <div id="cart-container">
+      <ul id="cart"></ul>  <!--Добавил корзину-->
+      <p id="total">Итого:</p> <!--АЙДИШНИКИ-->
+      <img id="cart-icon" src= "img/8800.png" alt="Корзина" width="90" height="60"> <!--КОРЗИНААААА-->
+      
+    </div>
+		
+  
+	</header>
+	<main>
+		<section class="section" id="new-products">
+      <div class="container">
+        <h2 style="color: red;" >Новинки</h2> <!-- Инлайновый стиль (приоритет выше внутреннего смотреть h2 выше) --> 
+			<table>
+        <button id="add-row">Добавить строку</button>
+				<caption>
+					Таблица новинок
+				</caption>
+				<tr>
+					<th scope="col">Peak Online</th>
+					<th scope="col">Games</th>
+					<th scope="col">Sold</th>
+				</tr>
+				<tr>
+					<th scope="row">3million</th>
+					<td><a href="./second.html">Black Myth: Wukong</a></td>
+					<td>10million</td>
+				</tr>
+				<tr>
+					<th scope="row">2million</th>
+					<td>God of War:Ragnarok</td>
+					<td>4million</td>
+				</tr>
+        <tr>
+					<th scope="row">1million</th>
+					<td>Crysis 3</td>
+					<td>7million</td>
+				</tr>
+        </div>
+      </table>
+    </div>
+		</section>
+    <section id="recomend" class="recomend">
+      <div class="container">
+        <article>
+          <img src="#" alt="Игра">
+          <h3>
+            Первая игра
+          </h3>
+          <span>Информация</span>
+          <button class="buy" data-id="1" data-name="Wukong" data-price="700">Купить</button>     <!-- Использование атрибута -->
+        </article>
+        <article>
+          <img src="#" alt="Игра">
+          <h3>
+            Первая игра
+          </h3>
+          <span>Информация</span>
+          <button class="buy" data-id="2" data-name="2" data-price="200">Купить</button>    <!-- Использование атрибута -->
+        </article>
+        <article>
+          <img src="#" alt="Игра">
+          <h3>
+            Первая игра
+          </h3>
+          <span>Информация</span>
+          <button class="buy" data-id="3" data-name="2" data-price="100">Купить</button>     <!-- Использование атрибута -->
+        </article>
+      </div>
+    </section>
+    <section  id="top"  class="top">
+      <h4> Интересный факт </h4>
+		<img src="./img/prev.png" alt="Pic" class = "float-image">		
+    <p>ПОКА ЧТО ПРОСТО НАБРОСОК ТЕКСТА.</p>
+    
+			
+  <div>  
+  <!-- фотка для css 3 -->
+  <img src="./img/s1.png" alt="Картинка" class="image">
+		</div>
+  <div>
+  <script src="index.js"></script> <!--ДОБАВИЛ-->
+  </div>
+    </section>
+	</main>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+*{
+	margin: 0; 
+	padding: 0;
+}
+.main{
+	width: 100%;
+	height: 100vh;
+	background-color:#3A1078;	
+}
+.text-block {
+	border: 1px solid black;                     /* Граница блока, видимая */
+	padding: 2cm 1cm 2cm 3cm;                      /* Отступы: сверху 2 см, справа 1 см, снизу 2 см, слева 3 см */
+	background-color: lightgray;                       /* Фон */
+	font-family: 'Times New Roman', serif;              /* Шрифт */
+	font-size: 14pt;                              /* Кегль шрифта 14 пунктов */
+	text-indent: 1.5cm;  /* Абзацный отступ - 1.5 см */
+
+	text-align: center;                           /* GameFusion по центру */
+}
+	
+
+
+
+.text-block p::first-letter {
+	font-size: 18pt;                        /* Размер первой буквы 18 */
+	font-weight: bold;                     /* Жирный шрифт для выделения буквицы */
+}
+.text-block .title {
+	text-align: center;                         /* расположение */
+	font-size: 24pt;                           /* Размер шрифта заголовка */
+	margin-bottom: 20px;                      /* Отступ снизу */
+	font-weight: bold;                       /* Жирный шрифт */
+}
+table {
+	width: 100%;                           /* Ширина таблицы 100% */
+	border-collapse: collapse;         /* Убирал промежутки между ячейками */
+}
+
+/* Заголовки таблицы */
+th {
+	text-align: center;                         /* по центру */
+	background-color: #f2f2f2;               /* Фон заголовков таблицы */
+	padding: 10px;                            /* Отступы в заголовках */
+	border: 1px solid black;               /* Граница для заголовков */
+}
+
+/* Ячейки таблицы */
+td {
+	padding: 10px;                      /* Отступы в ячейках */
+	border: 1px solid black;          /* Границы для ячеек */
+}
+
+/* Первый столбец (выравнивание по ширине) */
+th[scope="row"], td:first-child {       /* СЕЛЕКТОРЫ (первая ячейка в каждой строке таблицы). */
+	text-align: justify;                  /* Выравнивание текста по ширине */ 
+}
+
+/* Второй столбец (выравнивание по центру) */
+td:nth-child(2) {
+	text-align: center;                    /* Выравнивание второго столбца по центру */
+}
+                           /* СЕЛЕКТОРЫ */
+/* Четные столбцы (светлый фон) */
+td:nth-child(even) {
+	background-color: #a19c9c;           /* Светлый фон для четных столбцов */
+}
+ 
+/* Нечетные столбцы (белый фон) */
+td:nth-child(odd) {
+	background-color: white;             /* Белый фон для нечетных столбцов */
+}
+
+/* Стиль для caption (заголовок таблицы) */
+caption {
+	caption-side: top;
+	font-size: 18pt;
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-align: center;
+} /* pict */
+.float-image {
+	float: left; /* Обтекание слев */
+	margin: 0 0 15px 15px; /* Отступы: справа 0, снизу 15px, слева 15px */
+	max-width: 200px; /* Максимальная ширина изображения */
+}
+.float-image p {
+	margin: 0; /* Убираем отступы у параграфа */
+}
+.highlight {
+    color: #c2210c; /* Цвет текста */
+    font-size: 24pt; /* Размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
+}
+button[data-id="1"] { /* ИСПОЛЬЗОВАНИЕ АТРИБУТОВ */
+    background-color: #866ea1; /* Стиль для кнопки с определенным data-id */
+}
+button[data-id="2"] {
+    background-color: #866ea1; /* Стиль для кнопки с определенным data-id */
+}
+button[data-id="3"] {
+    background-color: #866ea1; /* Стиль для кнопки с определенным data-id */
+}
+button {
+    background-color: blue; /*Кнопка цвет */
+    color: white; /*  просто цвет */
+    border: none; /* -границы */
+    padding: 10px 20px; /* внутренние отспуты сверху 10 снизу 20 */
+    cursor: pointer; /*  меняет курсор при наводке*/
+}
+button:hover { /* ПСЕВДОКЛАСС */
+    background-color: darkblue; /* Цвет меняется при наведении */
+}
+.image {  /*  CSS 3 */
+    position: absolute; /* Позволяет свободно размещать объект независмо от других может спокойно размещаться не мешая другим объектам*/
+    top: 0; /* Располагает изображение в верхней части */
+    right: 0; /* Располагает изображение в правой части */
+    max-width: 100px; /* Максимальная ширина изображения */
+    height: auto; /* Сохранение пропорций изображения */
+    margin: 10px; /* Отступ от краев */
+	animation: rotate 5s linear infinite;
+}
+#cart-container {
+    position: fixed;   /* Фиксированное положение */
+    top: 9px;         /* Отступ сверху (можно изменить, если нужно) */
+    right: 120px;      /* Отступ от правого края (примерно 12 см) */
+    
+    padding: 10px;     /* Внутренние отступы */
+    
+    border-radius: 5px; /* Закругленные углы */
+    z-index: 1000; /* Чтобы корзина была поверх других элементов */
+}
+
